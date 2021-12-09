@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(rgb(212, 151, 36), rgb(71, 71, 163));
-  z-index: 2;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -20,7 +20,7 @@ header img {
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 50px;
   display: inline;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: relative;
@@ -32,8 +32,6 @@ nav ul {
   line-height: 40px;
   background-color: rgb(28, 128, 128);
   display: flex;
-  border-left: 10px solid white;
-  border-right: 10px solid white;
   border-radius: 20px;
   margin: 15px;
 }
@@ -45,6 +43,20 @@ nav li {
 nav a:link {
   text-decoration: none;
   color: black;
+}
+
+content p {
+  margin: 15px;
+}
+
+content h2 {
+  font-size: 30px;
+  margin: 15px;
+}
+content span {
+  background-color: burlywood;
+  border: solid black 1px;
+  border-top-left-radius: 10px;
 }
 
 nav a:visited {
