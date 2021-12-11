@@ -28,20 +28,33 @@
 
    </nav>
 
-   <content>
+   <content id="about-me">
+       <div>
        <h2>About Me</h2>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, maxime! Iure, et! A maxime tenetur eius adipisci. Esse perspiciatis labore eligendi laudantium consequuntur, dolorum sint cum soluta cumque quibusdam enim?</p>
-   </content>
+        </div>
+    </content>
 
    <content>
         <div id="projects">
-            <span id="pro1">Project 1</span>
-            <span id="pro2">Project 2</span>
-            <span id="pro3">Project 3</span>
-            <span id="pro4">Project 4</span>
-            <span id="pro5">Project 5</span>
-            
+            <div class="pro1">
+            <button class="pro1">Project 1</button>
+            <p class="hide1"> some content describing my project 1</p>
+            </div>
+            <button id="pro2">Project 2</button>
+            <button id="pro3">Project 3</button>
+            <button id="pro4">Project 4</button>
+            <button id="pro5">Project 5</button>
         </div>
    </content>
+
+   <script>
+       function pro1() {
+           document.getElementById("pro1-1").style.visability = "visible";
+       }
+
+document.getElementById("pro1-1").style.visability = "hidden";
+
+   </script>
 </body>
 </html>

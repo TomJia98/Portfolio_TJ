@@ -7,8 +7,21 @@ header {
   background-color: rgb(170, 34, 24, 0.7);
   /* border: 10px solid white; */
   width: 40%;
+  position: relative;
   border-radius: 20px;
   margin: 15px;
+  animation-name: header;
+  animation-duration: 2.5s;
+}
+
+#about-me div {
+  background-color: rgb(170, 34, 24, 0.7);
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  animation-name: about-me;
+  animation-duration: 2.5s;
+  /* animation-delay: 5s; */
 }
 
 header img {
@@ -34,6 +47,10 @@ nav ul {
   display: flex;
   border-radius: 20px;
   margin: 15px;
+  position: relative;
+  animation-name: nav;
+  animation-duration: 2.5s;
+  /* animation-delay: 2.5s; */
 }
 
 nav li {
@@ -53,10 +70,25 @@ content h2 {
   font-size: 30px;
   margin: 15px;
 }
-content span {
+
+#projects {
+  margin: 20px;
+}
+
+content button {
   background-color: burlywood;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   border-top-left-radius: 10px;
+  padding: 5px;
+  border: none;
+}
+content button:hover {
+  color: grey;
+  background-color: rgb(212, 167, 108);
+}
+
+.pro1-1 {
+  display: none;
 }
 
 nav a:visited {
@@ -66,4 +98,32 @@ nav a:hover {
 }
 
 nav a:active {
+}
+
+@keyframes header {
+  0% {
+    right: 550px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes nav {
+  0% {
+    left: 1920px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes about-me {
+  0% {
+    right: 1920px;
+  }
+
+  100% {
+    right: 0px;
+  }
 }
