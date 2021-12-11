@@ -74,6 +74,34 @@ content h2 {
 #projects {
   margin: 20px;
 }
+main ul {
+  margin-top: 50px;
+}
+
+main li {
+  display: inline;
+  background-color: rgb(240, 197, 140);
+  padding: 7px;
+  border-top-left-radius: 8px;
+}
+
+/* main div {
+  display: none;
+} */
+
+.projects div {
+  display: none;
+}
+.projects div:target {
+  display: block;
+}
+main li:hover {
+  background-color: rgb(212, 167, 108);
+}
+
+.hide1 {
+  position: relative;
+}
 
 content button {
   background-color: burlywood;
