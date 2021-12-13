@@ -89,34 +89,24 @@ main li {
   display: none;
 } */
 
+.Proitem {
+  background-color: rgb(240, 197, 140);
+}
 .projects div {
   display: none;
 }
 .projects div:target {
   display: block;
 }
+main a {
+  padding: 5px;
+}
+main a:link {
+  text-decoration: none;
+}
+
 main li:hover {
   background-color: rgb(212, 167, 108);
-}
-
-.hide1 {
-  position: relative;
-}
-
-content button {
-  background-color: burlywood;
-  /* border: solid black 1px; */
-  border-top-left-radius: 10px;
-  padding: 5px;
-  border: none;
-}
-content button:hover {
-  color: grey;
-  background-color: rgb(212, 167, 108);
-}
-
-.pro1-1 {
-  display: none;
 }
 
 nav a:visited {
