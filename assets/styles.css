@@ -22,12 +22,13 @@ header {
   position: relative;
   animation-name: about-me;
   animation-duration: 2.5s;
+  padding: 15px;
   /* animation-delay: 5s; */
 }
 
 header img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 25%;
+  max-height: 25%;
   border-radius: 100px;
   padding: 25px;
   display: inline;
@@ -51,7 +52,6 @@ nav ul {
   position: relative;
   animation-name: nav;
   animation-duration: 2.5s;
-  /* animation-delay: 2.5s; */
 }
 
 nav li {
@@ -63,8 +63,14 @@ nav a:link {
   color: black;
 }
 
-.contact h3 {
+.contact div {
   background-color: rgb(28, 128, 128);
+  margin-left: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 30%;
+  animation-name: nav;
+  animation-duration: 2.5s;
 }
 content p {
   margin: 15px;
@@ -127,12 +133,16 @@ main a:link {
 
 main li:hover {
   background-color: rgb(212, 167, 108);
+  color: black;
 }
 
 nav a:visited {
+  color: black;
 }
 
 nav a:hover {
+  background-color: rgb(26, 109, 109);
+  padding: 9px;
 }
 
 nav a:active {
