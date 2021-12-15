@@ -2,11 +2,11 @@ body {
   background-image: linear-gradient(rgb(212, 151, 36), rgb(71, 71, 163));
   background-repeat: no-repeat;
   height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 header {
-  background-color: rgb(170, 34, 24, 0.7);
-  /* border: 10px solid white; */
+  background-color: rgb(170, 34, 24);
   width: 40%;
   position: relative;
   border-radius: 20px;
@@ -15,15 +15,12 @@ header {
   animation-duration: 2.5s;
 }
 
-#about-me div {
-  background-color: rgb(170, 34, 24, 0.7);
-  border-radius: 20px;
-  margin: 15px;
+header h1 {
+  font-size: 50px;
+  display: inline;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: relative;
-  animation-name: about-me;
-  animation-duration: 2.5s;
-  padding: 15px;
-  /* animation-delay: 5s; */
+  bottom: 30px;
 }
 
 header img {
@@ -32,14 +29,6 @@ header img {
   border-radius: 100px;
   padding: 25px;
   display: inline;
-}
-
-header h1 {
-  font-size: 50px;
-  display: inline;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  position: relative;
-  bottom: 30px;
 }
 
 nav ul {
@@ -63,15 +52,15 @@ nav a:link {
   color: black;
 }
 
-.contact div {
-  background-color: rgb(28, 128, 128);
-  margin-left: 15px;
-  padding: 20px;
-  border-radius: 20px;
-  max-width: 30%;
-  animation-name: nav;
-  animation-duration: 2.5s;
+nav a:visited {
+  color: black;
 }
+
+nav a:hover {
+  background-color: rgb(26, 109, 109);
+  padding: 9px;
+}
+
 content p {
   margin: 15px;
 }
@@ -80,26 +69,62 @@ content h2 {
   font-size: 30px;
   margin: 15px;
 }
-
-#projects {
-  margin: 20px;
+main {
+  animation-name: main;
+  animation-duration: 3s;
+  transition-timing-function: linear;
 }
+
+main a {
+  padding: 5px;
+}
+main a:link {
+  text-decoration: none;
+}
+
 main ul {
   margin-top: 50px;
 }
 
 main li {
   display: inline;
-  background-color: rgb(240, 197, 140);
+  background-color: rgb(170, 34, 24);
+  position: relative;
+  bottom: 8px;
   padding: 7px;
   border-top-left-radius: 8px;
   border-bottom: 1px solid black;
 }
 
+main li a:link {
+  color: black;
+}
+
+main li:hover {
+  background-color: rgba(133, 33, 26);
+  color: black;
+}
+
+.contact div {
+  background-color: rgb(28, 128, 128);
+  margin-left: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 30%;
+}
+.contact li {
+  padding: 20px;
+}
+
+.contact a:link {
+  text-decoration: none;
+  color: black;
+}
+
 .Proitem {
-  background-color: rgb(240, 197, 140);
+  background-color: rgb(170, 34, 24);
   padding: 30px;
-  max-width: 40%;
+  max-width: 75%;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -110,44 +135,59 @@ main li {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+
 .Proitem p {
   line-height: 1.5;
   margin-bottom: 15px;
 }
+
 .Proitem img {
   max-width: 50%;
   max-height: 75%;
 }
+
 .projects div {
   display: none;
 }
+
 .projects div:target {
   display: block;
 }
-main a {
-  padding: 5px;
-}
-main a:link {
-  text-decoration: none;
+
+#projects {
+  margin: 20px;
 }
 
-main li:hover {
-  background-color: rgb(212, 167, 108);
-  color: black;
+#about-me div {
+  background-color: rgb(170, 34, 24);
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  animation-name: about-me;
+  animation-duration: 2.5s;
+  padding: 15px;
+  /* animation-delay: 5s; */
 }
 
-nav a:visited {
-  color: black;
+@media screen and (max-width: 790px) {
+  main li {
+    display: block;
+    max-width: 80%;
+    border-radius: 10px;
+  }
+  nav ul {
+    display: block;
+  }
 }
 
-nav a:hover {
-  background-color: rgb(26, 109, 109);
-  padding: 9px;
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-nav a:active {
-}
-
 @keyframes header {
   0% {
     right: 550px;
