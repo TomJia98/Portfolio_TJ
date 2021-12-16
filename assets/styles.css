@@ -144,6 +144,7 @@ main li:hover {
 .Proitem img {
   max-width: 50%;
   max-height: 75%;
+  box-shadow: 7px 7px 3px rgb(131, 114, 114, 0.5);
 }
 
 .projects div {
