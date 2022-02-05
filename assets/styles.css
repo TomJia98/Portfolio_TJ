@@ -1,6 +1,8 @@
 body {
-  background-image: linear-gradient(rgb(212, 151, 36), rgb(71, 71, 163));
+  background-image: url("./images/background.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -24,8 +26,8 @@ header h1 {
 }
 
 header img {
-  max-width: 25%;
-  max-height: 25%;
+  width: 25%;
+  height: 25%;
   border-radius: 100px;
   padding: 25px;
   display: inline;
@@ -37,12 +39,18 @@ nav ul {
   background-color: rgb(28, 128, 128);
   display: flex;
   border-radius: 20px;
+  padding-right: 30px;
+  width: fit-content;
   margin: 15px;
   position: relative;
   animation-name: nav;
   animation-duration: 2.5s;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 nav li {
   padding-left: 40px;
 }
@@ -92,8 +100,7 @@ main li {
   position: relative;
   bottom: 8px;
   padding: 7px;
-  border-top-left-radius: 8px;
-  border-bottom: 1px solid black;
+  border-radius: 8px;
 }
 
 main li a:link {
@@ -110,9 +117,17 @@ main li:hover {
   margin-left: 15px;
   padding: 20px;
   border-radius: 20px;
-  max-width: 30%;
+  width: 30%;
+  animation-name: main;
+  animation-duration: 3s;
+  transition-timing-function: linear;
 }
+
 .contact li {
+  padding: 20px;
+  font-size: 20px;
+}
+.contact a {
   padding: 20px;
 }
 
@@ -125,9 +140,8 @@ main li:hover {
   background-color: rgb(170, 34, 24);
   padding: 30px;
   max-width: 75%;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 .Proitem h3 {
@@ -167,7 +181,6 @@ main li:hover {
   animation-name: about-me;
   animation-duration: 2.5s;
   padding: 15px;
-  /* animation-delay: 5s; */
 }
 
 @media screen and (max-width: 790px) {
@@ -175,6 +188,12 @@ main li:hover {
     display: block;
     max-width: 80%;
     border-radius: 10px;
+  }
+  header {
+    width: 90%;
+  }
+  .contact div {
+    width: 80%;
   }
   nav ul {
     display: block;
