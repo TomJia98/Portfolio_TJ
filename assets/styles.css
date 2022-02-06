@@ -139,7 +139,8 @@ main li:hover {
 .Proitem {
   background-color: rgb(170, 34, 24);
   padding: 30px;
-  max-width: 75%;
+  width: fit-content;
+  max-width: 50%;
   border-radius: 20px;
   margin-top: 10px;
 }
@@ -156,7 +157,7 @@ main li:hover {
 }
 
 .Proitem img {
-  max-width: 50%;
+  max-width: 90%;
   max-height: 75%;
   box-shadow: 7px 7px 3px rgb(131, 114, 114, 0.5);
 }
@@ -176,6 +177,7 @@ main li:hover {
 #about-me div {
   background-color: rgb(170, 34, 24);
   border-radius: 20px;
+  width: fit-content;
   margin: 15px;
   position: relative;
   animation-name: about-me;
