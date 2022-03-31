@@ -41,12 +41,15 @@ transform: scale(1);
 
 }
 #about-me-text{
-background-image:url('./images/lined-paper.jpg');
+
 border-radius: 4px;
 padding: 5px;
 position: fixed;
-top:20px;
-right: 20px;
+cursor:grab;
+left:20px;
+}
+#about-me-text img {
+height:100px;
 
 }
 .center-text {
@@ -67,7 +70,6 @@ right: 20px;
     color: white;
 }
 .right-wall-about-me{
-    display: none;
     position: fixed;
     top:50px;
     right:100px;
