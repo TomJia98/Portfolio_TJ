@@ -35,7 +35,9 @@
   <span class="buttonsbar"><button id="tunesplice-button" class="buttons">TuneSplice</button>
     <button class="buttons" id="junglr-button">Junglr</button>
     <button class="buttons" id="pro3-button">Project 3</button>
-    <button class="buttons" id="employee-tracker-button">Employee Tracker</button></span>
+    <button class="buttons" id="employee-tracker-button">Employee Tracker</button>
+    <button class="buttons" id="weather-scheduler-button">Weather Scheduler</button></span>
+
   
   <div id="tunesplice">
     <h2>TuneSplice</h2>
@@ -74,19 +76,59 @@ can learn to speak monkey.<br> It also features live refresh using websockets, a
   </p>
 <img src="./assets/images/employee tracker.png" style="height:380px; width:650px;" alt="employee tracker">
 </div>
+<!-- --------------- -->
 
+<div id="weather-scheduler" style="display: none;">
+  <h2>Weather Scheduler</h2>
+  <p>This was my first work dealing with front end API's. <br>
+  Its a weather checking application that also lets your store your recent viewings for easy use on return <br>
+</p>
+<a href="https://tomjia98.github.io/weather_scheduler_TJ/" target=”_blank”><img src="./assets/images/weatherScheduler.png" alt="live weather app" style="height:380px; width:650px;"></a>
+<p>View or download the code <a href="https://github.com/TomJia98/weather_scheduler_TJ" target=”_blank”>here</a></p>
+
+
+</div>
 
 </span>
 <!-- other work section -->
 <span id="other-work" style="display: none;">
-  <p>Coming Soon! check this space for future updates, as I add work done outside of my coding course</p>
+  <button class="close">X</button>
+
+  <p>Coming Soon! check this space for future updates. <br>
+     As I add work done outside of my coding course, it will appear here</p>
+<img src="./assets/images/underconstruction.jpg">
+</span>
+<!-- resume -->
+
+<span id="resume" style="display:none;">
+
+  <button class="close">X</button>
+<h2> My Resume</h2>
+
+<p>Click to view in full</p>
+<a href="https://docs.google.com/document/d/1fwuvSm7mSrBTL4na9VjABxoBiqREuzHM/edit?usp=sharing&ouid=110845975702977133833&rtpof=true&sd=true" target=”_blank”>
+  <img src="./assets/images/resumePic.png" alt="resume" style="height:600px; width:650px;">
+</a>
+</span>
 
 
+<span id="contact-info" style="display:none;">
+  <div class="contact">    
+    <button class="close">X</button>
+    <h2>
+            Contact Me
+        </h2>
+
+       
+             <a href="mailto:tomjia198@gmail.com"><img src="./assets/images/mail.jpg" style="height:100px; width:150px; border-radius:20px;"></a>
+             <a href="https://www.linkedin.com/in/tom-jia-222b50226/"><img src="./assets/images/linked.png" style="height:100px; width:150px; border-radius:20px;"></a>
+             <a href="https://github.com/TomJia98"><img src="./assets/images/github.png" style="height:100px; width:150px; border-radius:20px;"></a>
+        
+    </div>
 
 
 </span>
-
-    
+    <!-- drawers -->
     <content>
     <div class="chest">
         <div class="chest__panel chest__panel--back"></div>
@@ -146,7 +188,7 @@ can learn to speak monkey.<br> It also features live refresh using websockets, a
             <div class="drawer__structure">
               <div class="drawer__panel drawer__panel--back">
               </div>
-              <div class="drawer__panel drawer__panel--bottom"></div>
+              <div class="drawer__panel drawer__panel--bottom"><img id="folder-doc-resume" src="./assets/images/folder-image.jpg"></div>
               <div class="drawer__panel drawer__panel--right"></div>
               <div class="drawer__panel drawer__panel--left"></div>
               <div class="drawer__panel drawer__panel--front"><span class="drawer-description">My Resume</span></div>
@@ -159,7 +201,9 @@ can learn to speak monkey.<br> It also features live refresh using websockets, a
             <div class="drawer__structure">
               <div class="drawer__panel drawer__panel--back">
               </div>
-              <div class="drawer__panel drawer__panel--bottom"></div>
+              <div class="drawer__panel drawer__panel--bottom">
+                <img id="folder-doc-contact" src="./assets/images/folder-image.jpg">
+              </div>
               <div class="drawer__panel drawer__panel--right"></div>
               <div class="drawer__panel drawer__panel--left"></div>
               <div class="drawer__panel drawer__panel--front"><span class="drawer-description">Contact Info</span></div>
