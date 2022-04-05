@@ -23,7 +23,9 @@
   ## Usage
 
   visit the live website at https://tomjia98.github.io/Portfolio_TJ/
-  ![](./assets/images/desktop version.png)
+
+
+  ! [liveapp] (./assets/images/desktop.png)
 
   ## Licence
 
