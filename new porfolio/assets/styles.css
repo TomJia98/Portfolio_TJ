@@ -46,6 +46,14 @@ bottom:14px;
   height:140px;
   left: 20px;
 }
+
+#folder-doc-other{
+  position: fixed;
+bottom:14px;
+  cursor:grab;
+  height:140px;
+  left: 20px;
+}
 #about-me-text{
 border-radius: 4px;
 padding: 5px;
@@ -72,6 +80,26 @@ height:100px;
     top:30px;
     right:35px;
     color: white;
+}
+.slide {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+.slide2 {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+#profile-pic {
+  position: relative;
+  display:inline;
+  left:400px;
+  top:283px;
+  height: 200px;
+  width:200px;
+  border-radius: 20px;
+  box-shadow:5px 10px grey;
+
 }
 #right-wall-about-me{
     position: fixed;
@@ -107,6 +135,7 @@ top:20px;
   width: 40%;
   border-radius: 30px;
   box-shadow: 10px 20px rgba(61, 44, 44, 0.5);
+
 }
 
 .chest {
@@ -390,21 +419,7 @@ summary:after {
   }
 }
 
-#profile-pic {
-  position: relative;
-  display:inline;
-  left:400px;
-  top:283px;
-  height: 200px;
-  width:200px;
-  border-radius: 20px;
-  box-shadow:5px 10px grey;
 
-}
-.slide {
-  animation-duration: 1s;
-  animation-name: slidein;
-}
 @keyframes slidein {
   from {
     margin-right: 70%;
