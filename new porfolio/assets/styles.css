@@ -38,10 +38,15 @@ content {
 right: 590px;
 bottom: -80px;
 transform: scale(1);
-
+}
+#folder-doc-major{
+  position: fixed;
+bottom:14px;
+  cursor:grab;
+  height:140px;
+  left: 20px;
 }
 #about-me-text{
-
 border-radius: 4px;
 padding: 5px;
 position: fixed;
@@ -69,7 +74,7 @@ height:100px;
     right:35px;
     color: white;
 }
-.right-wall-about-me{
+#right-wall-about-me{
     position: fixed;
     top:50px;
     right:100px;
@@ -81,17 +86,23 @@ height:100px;
     border-radius: 5px;
     z-index: 1;
 }
-.right-wall-about-me p {
+#right-wall-about-me p {
     position: relative;
     left:110px;
-    top: 90px;
+    bottom: 115px;
 }
-.right-wall-about-me ul {
+#right-wall-about-me ul {
     line-height: 1.7em;
     position: relative;
     left:110px;
-    top: 110px;
+    bottom: 107px;
 }
+#right-wall-major-projects{
+
+  position: fixed;
+}
+
+
 
 .chest {
   height: calc(var(--height) * 1.61vmin);
@@ -371,5 +382,30 @@ summary:after {
   }
   50% {
     transform: translate3d(0, -10%, 1px);
+  }
+}
+
+#profile-pic {
+  position: relative;
+  display:inline;
+  left:400px;
+  top:283px;
+  height: 200px;
+  width:200px;
+  border-radius: 20px;
+  box-shadow:5px 10px grey;
+
+}
+.slide {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-right: 70%;
+    
+  }
+  to {
+    margin-left: 0%;
   }
 }

@@ -8,9 +8,10 @@
     <title>Portfolio_TJ</title>
 </head>
 <body>
-    <span class="right-wall-about-me" style="display: none;">
-        <h2 class="center-text">About Me -- Tom Jia</h2>
-        <p>Hello and welcome to my Portfolio! <br> <br>
+  <!-- about me section -->
+    <span id="right-wall-about-me" style="display: none;">
+        <h2 class="center-text">About Me -- Tom Jia</h2> <button class="close">X</button>
+        <p>Hello and welcome to my Portfolio! <img id='profile-pic' src="./assets/images/profile_picture.jpg"><br> <br>
         My name is Tom Jia and I am a dedicated Full Stack Developer currently studying at the University of Western Australia. <br><br>
         I found an interest in coding back in 2018 after I watch YouTube Evil Mastermind Micheal Reeves using facial recognition software to <br>
         track and point a laser into someones eye. <br> <br>
@@ -27,10 +28,21 @@
     
 </ul>
     </span>
-    <!-- <div class="left-wall">
+<!-- major project section -->
+<span id="right-wall-major-projects" style="display: none;">
+  <span class="buttons"><button>TuneSplice</button><button>Junglr</button><button>Coming Soon</button><button class="close">X</button></span>
+  <div id="#tunesplice">
+    <p>The first major project I undertook, TuneSplice, was a fron end application made in partnership with 2 other people in my UWA class. <br>
+      Tunesplice is game that dynamically changes the lyrics of current top chart songs, then displays them to you with a timer for you to try and guess what the original song was</p>
 
-        <img id="resume-image" src="./assets/images/resume pic mirror.png">
-    </div> -->
+
+  </div>
+
+
+
+</span>
+
+    
     <content>
     <div class="chest">
         <div class="chest__panel chest__panel--back"></div>
@@ -62,9 +74,9 @@
             <summary></summary>
           </details>
           <div class="drawer__structure">
-            <div class="drawer__panel drawer__panel--back"><span>is</span>
+            <div class="drawer__panel drawer__panel--back"><span></span>
             </div>
-            <div class="drawer__panel drawer__panel--bottom"></div>
+            <div class="drawer__panel drawer__panel--bottom"><img id="folder-doc-major" src="./assets/images/folder-image.jpg"></div>
             <div class="drawer__panel drawer__panel--right"></div>
             <div class="drawer__panel drawer__panel--left"></div>
             <div class="drawer__panel drawer__panel--front"><span class="drawer-description">Major Projects</span></div>
