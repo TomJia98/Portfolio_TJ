@@ -10,7 +10,7 @@ export default function header() {
         <NavLink>About Me</NavLink>
         <NavLink>Resume</NavLink>
         <NavLink>Contact Me</NavLink>
-      </Router> */}
+  </Router> */}
     </header>
   );
 }
