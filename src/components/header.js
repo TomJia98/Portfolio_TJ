@@ -5,12 +5,10 @@ export default function header() {
   return (
     <header>
       <h1>Tom Jia</h1>
-      {/* <Router>
-        <NavLink>Home</NavLink>
-        <NavLink>About Me</NavLink>
-        <NavLink>Resume</NavLink>
-        <NavLink>Contact Me</NavLink>
-  </Router> */}
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact Me</a>
     </header>
   );
 }

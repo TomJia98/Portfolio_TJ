@@ -4,15 +4,25 @@ import ancestree from "../images/ancestree.png";
 import junglr from "../images/junglr.png";
 import tunesplice from "../images/TuneSplice.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Modal from "react-modal";
 
 export default () => {
   const [activeProject, setActiveProject] = useState(0);
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   const changeEvent = (arg) => {
     setActiveProject(arg);
   };
   const clickEvent = () => {
     console.log("thing clicked" + activeProject);
+    setIsOpen(true);
   };
 
   return (
@@ -22,6 +32,21 @@ export default () => {
         <p className="legend" onClick={clickEvent}>
           Ancestree, The collaborativly expandable ancestory viewer
         </p>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Example Modal"
+        >
+          <button onClick={closeModal}>close</button>
+          <div>I am a modal</div>
+          <form>
+            <input />
+            <button>tab navigation</button>
+            <button>stays</button>
+            <button>inside</button>
+            <button>the modal</button>
+          </form>
+        </Modal>
       </div>
       <div>
         <img alt="legend2" src={junglr} />
