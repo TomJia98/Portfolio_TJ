@@ -1,14 +1,27 @@
-import { Link, Router, Switch, NavLink } from "react-router-dom";
-import {} from "react-router";
-// TODO:  get the header to work correctly with redirects to the needed areas
-export default function header() {
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
+//this needs to be the top header, changing its link based on what the current url is
+export default function Header() {
+  const currentPageLink = () => {
+    if (window.location.pathname === "/projects") {
+      return (
+        <>
+          <Link path="/"> About Me</Link> <p> Resume </p>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <Link path="/projects"> Projects</Link> <p> Resume </p>
+        </>
+      );
+    }
+  };
+
   return (
-    <header>
-      <h1>Tom Jia</h1>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact Me</a>
-    </header>
+    <>
+      <header>{currentPageLink}</header>
+    </>
   );
 }

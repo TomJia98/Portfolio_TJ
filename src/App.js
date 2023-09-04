@@ -1,16 +1,18 @@
 import "./App.css";
-import { Link, Route, Switch } from "react-router-dom";
-import Header from "./components/header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { render } from "react-dom";
-import Carousel from "./components/projects";
+// import Carousel from "./pages/projects";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import Projects from "./pages/projects";
+import Main from "./pages/main";
 function App() {
   return (
-    <div>
-      <Header />
-      <Carousel />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
   );
 }
 
