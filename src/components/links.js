@@ -19,13 +19,13 @@ export default function Links(props) {
       <header id="links">
         {currentPageProject ? (
           <span>
-            <Link to="/">
+            <Link to="/" className="to-page">
               <h1 style={{ display: "inline-block" }}> 🢀 About Me</h1>
             </Link>
           </span>
         ) : (
           <span>
-            <Link to="/projects">
+            <Link to="/projects" className="to-page">
               <h1 style={{ display: "inline-block" }}>Projects 🢂 </h1>
             </Link>
           </span>
@@ -75,6 +75,7 @@ export default function Links(props) {
             </a>
           </span>
         </span>
+        <hr id="header-hr" />
       </header>
     </>
   );

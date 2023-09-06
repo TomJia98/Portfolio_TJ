@@ -5,7 +5,7 @@ import junglr from "../images/junglr.png";
 import tunesplice from "../images/TuneSplice.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Modal from "react-modal";
-
+import "./main.css";
 import Links from "../components/links.js";
 export default function Projects(props) {
   const [activeProject, setActiveProject] = useState(0);
@@ -53,35 +53,64 @@ export default function Projects(props) {
 
   return (
     <>
-      <div id="projects" className="page-container page">
-        <Carousel autoPlay infiniteLoop width="65%" onChange={changeEvent}>
+      <div className="page-container page carousel-wrapper">
+        <Carousel
+          autoPlay
+          infiniteLoop
+          width="65%"
+          onChange={changeEvent}
+          id="projects"
+        >
           <div>
-            <img alt="legend1" src={ancestree} />
-            <p className="legend" onClick={clickEvent}>
+            <a href="">
+              <img alt="legend1" src={ancestree} />
+            </a>
+            <a
+              className="legend"
+              href="https://github.com/TomJia98/ancestree-heroku"
+              target="_blank"
+              rel="noreferrer"
+            >
               Ancestree, The collaborativly expandable ancestory viewer
-            </p>
+            </a>
           </div>
           <div>
-            <img alt="legend2" src={junglr} />
-            <p className="legend" onClick={clickEvent}>
+            <a
+              href="https://junglr-fbf3894b2abd.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img alt="legend2" src={junglr} />
+            </a>
+            <a
+              className="legend"
+              href="https://github.com/TomJia98/Project-2"
+              target="_blank"
+              rel="noreferrer"
+            >
               Junglr, The fun way to do social networking
-            </p>
+            </a>
           </div>
           <div>
             <img alt="legend3" src={tunesplice} />
-            <p className="legend" onClick={clickEvent}>
+            <a
+              className="legend"
+              href="https://github.com/TomJia98/Project_Wunners"
+              target="_blank"
+              rel="noreferrer"
+            >
               tunesplice, A music guessing game that changes with the charts
-            </p>
+            </a>
           </div>
         </Carousel>
-        <Modal
+        {/* <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Example Modal"
-        >
-          {/* this part loads when the project carousel has been clicked */}
-          {currentModal()}
-        </Modal>
+        > */}
+        {/* this part loads when the project carousel has been clicked */}
+        {/* {currentModal()} */}
+        {/* </Modal> */}
       </div>
     </>
   );
