@@ -1,7 +1,7 @@
 import { Link, Router, Switch, NavLink } from "react-router-dom";
 import Title from "react-titles/Title4";
 import Header from "../components/header";
-import me from "../images/drawin of tom.png";
+import me from "../images/drawin-of-tom.png";
 // import Links from "../components/links";
 import "./main.css";
 export default function header() {

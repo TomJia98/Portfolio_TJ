@@ -28,8 +28,12 @@ function App() {
 
   const currentKey = location.pathname.split("/")[1] || "/";
   const timeout = { enter: 800, exit: 400 };
-  const direction = currentDepth - prevDepthRef.current >= 0 ? "left" : "right";
-
+  let direction; // = currentDepth - prevDepthRef.current >= 0 ? "left" : "right";
+  if (location.pathname === "/projects") {
+    direction = "right";
+  } else {
+    direction = "left";
+  }
   return (
     <>
       <Links depth={currentDepth} />
