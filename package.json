@@ -1,7 +1,7 @@
 {
   "name": "tj-portfolio",
   "version": "0.1.0",
-  "homepage": "http://TomJia98.github.io/Portfolio_TJ",
+  "homepage": "https://TomJia98.github.io/Portfolio_TJ/",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.10.3",
