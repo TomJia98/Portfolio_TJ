@@ -1,0 +1,36 @@
+#links{
+  display:flex;
+  flex-direction: row;
+    margin:0;
+}
+
+#me-photo{
+height: 55em;
+width: 85em;
+display:inline;
+position: fixed;
+left: 40%;
+
+}
+#title{
+    position: absolute;
+    top: 0;
+    left:10%;
+ 
+}
+
+.link-photo{
+    /* margin:0; */
+    width: auto;
+    height:auto;
+    display: inline-block;
+    margin-top : 5%;
+    /* padding-right: 2%; */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+
+}
+img{
+  
+  }

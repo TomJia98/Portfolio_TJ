@@ -6,7 +6,8 @@ import tunesplice from "../images/TuneSplice.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Modal from "react-modal";
 
-export default function Projects() {
+import Links from "../components/links.js";
+export default function Projects(props) {
   const [activeProject, setActiveProject] = useState(0);
   const [modalIsOpen, setIsOpen] = useState(false);
   function currentModal() {
@@ -51,35 +52,37 @@ export default function Projects() {
   };
 
   return (
-    <span id="projects">
-      <Carousel autoPlay infiniteLoop width="50%" onChange={changeEvent}>
-        <div>
-          <img alt="legend1" src={ancestree} />
-          <p className="legend" onClick={clickEvent}>
-            Ancestree, The collaborativly expandable ancestory viewer
-          </p>
-        </div>
-        <div>
-          <img alt="legend2" src={junglr} />
-          <p className="legend" onClick={clickEvent}>
-            Junglr, The fun way to do social networking
-          </p>
-        </div>
-        <div>
-          <img alt="legend3" src={tunesplice} />
-          <p className="legend" onClick={clickEvent}>
-            tunesplice, A music guessing game that changes with the charts
-          </p>
-        </div>
-      </Carousel>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Example Modal"
-      >
-        {/* this part loads when the project carousel has been clicked */}
-        {currentModal()}
-      </Modal>
-    </span>
+    <>
+      <div id="projects" className="page-container page">
+        <Carousel autoPlay infiniteLoop width="65%" onChange={changeEvent}>
+          <div>
+            <img alt="legend1" src={ancestree} />
+            <p className="legend" onClick={clickEvent}>
+              Ancestree, The collaborativly expandable ancestory viewer
+            </p>
+          </div>
+          <div>
+            <img alt="legend2" src={junglr} />
+            <p className="legend" onClick={clickEvent}>
+              Junglr, The fun way to do social networking
+            </p>
+          </div>
+          <div>
+            <img alt="legend3" src={tunesplice} />
+            <p className="legend" onClick={clickEvent}>
+              tunesplice, A music guessing game that changes with the charts
+            </p>
+          </div>
+        </Carousel>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Example Modal"
+        >
+          {/* this part loads when the project carousel has been clicked */}
+          {currentModal()}
+        </Modal>
+      </div>
+    </>
   );
 }
