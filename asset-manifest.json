@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio_TJ/static/css/main.f59d3a97.css",
-    "main.js": "/Portfolio_TJ/static/js/main.156581ca.js",
+    "main.css": "/Portfolio_TJ/static/css/main.32dfcd38.css",
+    "main.js": "/Portfolio_TJ/static/js/main.db3d0a27.js",
     "static/js/787.1606cefa.chunk.js": "/Portfolio_TJ/static/js/787.1606cefa.chunk.js",
     "static/media/TuneSplice.png": "/Portfolio_TJ/static/media/TuneSplice.bb2c22c1878d81851fab.png",
     "static/media/drawin-of-tom.png": "/Portfolio_TJ/static/media/drawin-of-tom.4116f54edd1984279303.png",
     "static/media/junglr.png": "/Portfolio_TJ/static/media/junglr.b53a987762d28c2211ff.png",
     "static/media/ancestree.png": "/Portfolio_TJ/static/media/ancestree.4773f2ab485941dba613.png",
     "index.html": "/Portfolio_TJ/index.html",
-    "main.f59d3a97.css.map": "/Portfolio_TJ/static/css/main.f59d3a97.css.map",
-    "main.156581ca.js.map": "/Portfolio_TJ/static/js/main.156581ca.js.map",
+    "main.32dfcd38.css.map": "/Portfolio_TJ/static/css/main.32dfcd38.css.map",
+    "main.db3d0a27.js.map": "/Portfolio_TJ/static/js/main.db3d0a27.js.map",
     "787.1606cefa.chunk.js.map": "/Portfolio_TJ/static/js/787.1606cefa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f59d3a97.css",
-    "static/js/main.156581ca.js"
+    "static/css/main.32dfcd38.css",
+    "static/js/main.db3d0a27.js"
   ]
 }
