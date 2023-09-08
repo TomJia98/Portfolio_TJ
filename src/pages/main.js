@@ -1,27 +1,41 @@
+import { useState, useEffect } from "react";
 import { Link, Router, Switch, NavLink } from "react-router-dom";
 import Title from "react-titles/Title4";
 import Header from "../components/header";
 import me from "../images/drawin-of-tom.png";
 // import Links from "../components/links";
 import "./main.css";
-export default function header() {
+export default function Header1() {
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
     <>
-      {/* <Links /> */}
       <div className="page-container page">
         <div id="title">
           <Title
             id="title-component"
-            size="400"
+            size={windowSize[0] > 600 ? "400" : "300"}
             text2="TOM JIA"
             text1="WEB DEVELOPER"
             open={true}
           />
           <div>
-            {/* <h2>ABOUT ME</h2> */}
-            <p
-              style={{ color: "white", fontSize: 20, width: "50%", zIndex: -1 }}
-            >
+            <p id="about-me">
               Hello! I'm Tom Jia, a passionate full-stack web developer with 2
               years of experience.
               <br /> <br />

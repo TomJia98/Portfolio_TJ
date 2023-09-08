@@ -3,11 +3,13 @@ import { Link, Router, Switch, NavLink } from "react-router-dom";
 import linkedIn from "../images/LI-In-Bug.png";
 import github from "../images/GitHub-Mark-64px.png";
 import resume from "../images/icons8-resume-100.png";
+import arrow from "../images/arrow.png";
 
 export default function Links(props) {
   const [currentPageProject, setcurrentPageProject] = useState(false);
 
   useEffect(() => {
+    console.log(window.location.pathname);
     if (window.location.pathname === "/projects") {
       setcurrentPageProject(true);
     } else {
@@ -19,14 +21,14 @@ export default function Links(props) {
       <header id="links">
         {currentPageProject ? (
           <span>
-            <Link to="/" className="to-page">
-              <h1 style={{ display: "inline-block" }}> 🢀 About Me</h1>
+            <Link to="/Portfolio_TJ/" className="to-page">
+              <h1 style={{ display: "inline-block" }}>To About Me</h1>
             </Link>
           </span>
         ) : (
           <span>
             <Link to="/projects" className="to-page">
-              <h1 style={{ display: "inline-block" }}>Projects 🢂 </h1>
+              <h1 style={{ display: "inline-block" }}>To Projects</h1>
             </Link>
           </span>
         )}
@@ -41,7 +43,7 @@ export default function Links(props) {
                 src={github}
                 className="link-photo"
                 alt="github"
-                style={{ width: 60, height: 60, marginLeft: 5 }}
+                style={{ marginLeft: 5 }}
               />
             </a>
           </span>
@@ -56,22 +58,17 @@ export default function Links(props) {
                 src={linkedIn}
                 className="link-photo"
                 alt="linkedIn"
-                style={{ width: 60, height: 60, marginLeft: 10 }}
+                style={{ marginLeft: 10 }}
               />
             </a>
           </span>
           <span>
             <a
-              href="https://docs.google.com/document/d/1nWVsyCN3FE8Fp6FzxnTcOuvC_ipXKmhX/edit?usp=sharing&ouid=110845975702977133833&rtpof=true&sd=true"
+              href="https://drive.google.com/file/d/16zy-UBpvnpozgT4DqoV-RdLdgHDIx3Wq/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={resume}
-                className="link-photo"
-                alt="resume"
-                style={{ width: 60, height: 60 }}
-              />
+              <img src={resume} className="link-photo" alt="resume" />
             </a>
           </span>
         </span>

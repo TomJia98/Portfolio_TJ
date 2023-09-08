@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import ancestree from "../images/ancestree.png";
 import junglr from "../images/junglr.png";
@@ -7,7 +7,25 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Modal from "react-modal";
 import "./main.css";
 import Links from "../components/links.js";
+
 export default function Projects(props) {
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   const [activeProject, setActiveProject] = useState(0);
   const [modalIsOpen, setIsOpen] = useState(false);
   function currentModal() {
@@ -57,7 +75,7 @@ export default function Projects(props) {
         <Carousel
           autoPlay
           infiniteLoop
-          width="65%"
+          width={windowSize[0] > 600 ? "65%" : "95%"}
           onChange={changeEvent}
           id="projects"
         >
@@ -70,6 +88,7 @@ export default function Projects(props) {
               href="https://github.com/TomJia98/ancestree-heroku"
               target="_blank"
               rel="noreferrer"
+              style={{ fontSize: 18, textDecoration: "none" }}
             >
               Ancestree, The collaborativly expandable ancestory viewer
             </a>
@@ -87,6 +106,7 @@ export default function Projects(props) {
               href="https://github.com/TomJia98/Project-2"
               target="_blank"
               rel="noreferrer"
+              style={{ fontSize: 18, textDecoration: "none" }}
             >
               Junglr, The fun way to do social networking
             </a>
@@ -98,8 +118,9 @@ export default function Projects(props) {
               href="https://github.com/TomJia98/Project_Wunners"
               target="_blank"
               rel="noreferrer"
+              style={{ fontSize: 18, textDecoration: "none" }}
             >
-              tunesplice, A music guessing game that changes with the charts
+              Tunesplice, A music guessing game that changes with the charts
             </a>
           </div>
         </Carousel>

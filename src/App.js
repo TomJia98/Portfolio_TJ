@@ -16,7 +16,10 @@ function App() {
   const location = useLocation();
 
   const getPathDepth = (location) => {
-    return location.pathname.split("/").filter((n) => n !== "").length;
+    if (location.pathname === "/projects") {
+      return 1;
+    } else return 0;
+    // return location.pathname.split("/").filter((n) => n !== "").length;
   };
 
   const currentDepth = getPathDepth(location);
@@ -26,7 +29,7 @@ function App() {
     prevDepthRef.current = currentDepth;
   }, [currentDepth]);
 
-  const currentKey = location.pathname.split("/")[1] || "/";
+  const currentKey = location.pathname.split("/")[1] || "/Portfolio_TJ/";
   const timeout = { enter: 800, exit: 400 };
   let direction; // = currentDepth - prevDepthRef.current >= 0 ? "left" : "right";
   if (location.pathname === "/projects") {
@@ -47,7 +50,7 @@ function App() {
         >
           <div className={`page ${direction}`}>
             <Routes location={location}>
-              <Route path="/" element={<Main />} />
+              <Route path="/Portfolio_TJ/" element={<Main />} />
               <Route
                 path="/projects"
                 element={<Projects depth={currentDepth} />}
